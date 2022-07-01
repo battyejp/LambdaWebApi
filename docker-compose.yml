@@ -1,0 +1,25 @@
+version: "3"
+services:
+  dynamoDb:
+    image: amazon/dynamodb-local
+    command: -jar DynamoDBLocal.jar -sharedDb -dbPath /home/dynamodblocal/
+    volumes:
+      - dynamodb_data:/home/dynamodblocal
+    ports:
+      - "8000:8000"
+
+  init-dynamo:
+    image: garland/aws-cli-docker
+    command: >
+      sh -c "aws --endpoint http://dynamoDb:8000 dynamodb delete-table --table-name sportTeams || true && aws dynamodb create-table --endpoint-url http://dynamoDb:8000 --table-name sportTeams --cli-input-json file:///src/tabledefinition.json"
+    links:
+      - dynamoDb
+    volumes:
+      - ./:/src
+    environment:
+      - AWS_ACCESS_KEY_ID=0
+      - AWS_SECRET_ACCESS_KEY=0
+      - AWS_DEFAULT_REGION=us-east-1
+
+volumes:
+  dynamodb_data: {}

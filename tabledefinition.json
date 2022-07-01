@@ -1,0 +1,26 @@
+{
+    "AttributeDefinitions": [
+        {
+            "AttributeName": "sportType",
+            "AttributeType": "S"
+        },
+        {
+            "AttributeName": "teamName",
+            "AttributeType": "S"
+        }
+    ],
+    "KeySchema": [
+        {
+            "AttributeName": "sportType",
+            "KeyType": "HASH"
+        },
+        {
+            "AttributeName": "teamName",
+            "KeyType": "RANGE"
+        }
+    ],
+    "ProvisionedThroughput": {
+        "ReadCapacityUnits": 25,
+        "WriteCapacityUnits": 25
+    }    
+}
