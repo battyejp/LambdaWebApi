@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LambdaWebApi", "LambdaWebApi\LambdaWebApi.csproj", "{A0686D6F-045D-493D-9528-E3F59DD7DA11}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LambdaWebApi.Tests", "LambdaWebApi.Tests\LambdaWebApi.Tests.csproj", "{E68946A3-CD50-432A-9124-314C8F7A7AC9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0686D6F-045D-493D-9528-E3F59DD7DA11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0686D6F-045D-493D-9528-E3F59DD7DA11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0686D6F-045D-493D-9528-E3F59DD7DA11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0686D6F-045D-493D-9528-E3F59DD7DA11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E68946A3-CD50-432A-9124-314C8F7A7AC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E68946A3-CD50-432A-9124-314C8F7A7AC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E68946A3-CD50-432A-9124-314C8F7A7AC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E68946A3-CD50-432A-9124-314C8F7A7AC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9326FB97-4327-436D-B303-9D171F32FA35}
+	EndGlobalSection
+EndGlobal
